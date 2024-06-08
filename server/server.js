@@ -19,8 +19,6 @@ const io = new Server(server, {
   }
 });
 
-// const MONGO_URI = 'mongodb+srv://vasanthsai1412003:jSwcyo5U6lTMZPMB@documents.eoe9yjo.mongodb.net/';
-
 mongoose.connect(process.env.MONGO_URI).then(() => {
   console.log('MongoDB connected');
 }).catch(err => {
